@@ -97,6 +97,9 @@ def load_api_keys():
 
 def save_api_keys(subsource="", omdb=""):
     """Write api_keys.txt on the local machine. Never committed (see .gitignore)."""
+    if isinstance(subsource, dict):
+        omdb = subsource.get("omdb", "")
+        subsource = subsource.get("subsource", "")
     try:
         with open(API_KEYS_PATH, "w", encoding="utf-8") as f:
             f.write("# Ent-Organizer API keys. This file stays on your PC and is gitignored.\n")
