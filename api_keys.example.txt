@@ -1,0 +1,7 @@
+# Copy this file to api_keys.txt and fill in your keys.
+# api_keys.txt stays on your PC and is gitignored (never pushed to GitHub).
+# Get a free OMDb key: https://www.omdbapi.com/apikey.aspx
+# Leave a value blank to disable that feature.
+
+subsource = 
+omdb = 
